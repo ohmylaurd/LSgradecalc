@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRADE CALCULATOR</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="table">
+<h1>Welcome to Grade Calculator!</h1>
+
+    <h2>Grade Calculator</h2>
+    <h3>*Please don't include "%" when inputting the percents</h3>
+
+    <table id="tbl1" border ="1">
+
+        <tr>
+            <th id="hp">Homework Points</th>
+            <th >Homework Percent</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="HomeworkPoints" value="" size="22"></td>
+            <td><input type="text" id="HomeworkPercent" value="" size="23"></td>
+        </tr>
+        <tr>
+            <th id="cp">Classwork Points</th>
+            <th >Classwork Percent</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="ClassworkPoints" value="" size="22"></td>
+            <td><input type="text" id="ClassworkPercent" value="" size="23"></td>
+        </tr>
+        <tr>
+            <th id="ap">Assessment Points</th>
+            <th >Assessment Percent</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="AssessmentPoints" value="" size="22"></td>
+            <td><input type="text" id="AssessmentPercent" value="" size="23"></td>
+        </tr>
+        <tr>
+            <th id="pp">Participation Points</th>
+            <th >Participation Percent</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="ParticipationPoints" value="" size="22"></td>
+            <td><input type="text" id="ParticipationPercent" value="" size="23"></td>
+        </tr>
+    </table>
+
+<button class="button" id ="myButton" onclick="calculateCurrentGrade()">Calculate Grade</button>
+<div class="print" id="currentgrade"></div>
+    <div class="print2" id="putout"></div>
+<h2>Final Calculator</h2>
+
+
+    <table id="tbl2" border="1">
+        <tr>
+            <th>Current Grade</th>
+            <th>Grade Desired</th>
+            <th>Final Percent</th>
+
+        </tr>
+        <tr>
+            <td><input type="text" id="currentgrade2"value="" size="22"></td>
+            <td><input type="text" id="GradeDesired" value="" size="22"></td>
+            <td><input type="text" id="FinalPercent" value="" size="22"></td>
+
+
+
+        </tr>
+
+    </table>
+    <div id="final"></div>
+</div>
+
+<button class="button" id ="myButton1" onclick="calculateGradeNeeded()">Final Grade Needed</button>
+<div class="print2" id="putout2"></div>
+
+</body>
+</html>
